@@ -1,0 +1,48 @@
+.decor__empty-triangle {
+  position: absolute;
+  border-left: 21px solid transparent;
+  border-right: 21px solid transparent;
+  border-bottom: 38px solid #f3efff;
+  border-radius: 7px;
+  transform: rotate(50deg);
+
+  &::after {
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: -15px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 25px solid #fff;
+    content: "";
+  }
+}
+.decor__circle {
+  background: linear-gradient(45deg, #8667f1, #bfa4fb);
+  position: absolute;
+  border-radius: 50px;
+
+  &::after {
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    border-radius: 50px;
+    content: "";
+  }
+}
+.decor__square {
+  position: absolute;
+  border-radius: 7px;
+  transform: rotate(60deg);
+
+  &::after {
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    content: "";
+  }
+}

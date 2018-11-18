@@ -1,0 +1,206 @@
+.page-header {
+  background-image: url("../img/bg-header.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 80px 214px;
+}
+.page-header__top-bar {
+  display: flex;
+  margin-bottom: 185px;
+}
+.page-header__logo {
+  background-image: url("../img/sprite.png");
+  width: 156px;
+  height: 38px;
+}
+.page-header__user-block {
+  background-color: #fff;
+  border-radius: 30px;
+  font-size: 0;
+  margin-left: auto;
+  box-shadow: 0 5px 20px 0 #b59ff1;
+}
+.page-header__search,
+.page-header__collection {
+  display: inline-block;
+  vertical-align: middle;
+  height: 66px;
+  position: relative;
+  font-size: 20px;
+  padding: 18px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.page-header__search:hover,
+.page-header__search:focus {
+  background-color: #faf4ff;
+  border-radius: 30px 0 0 30px;
+}
+.page-header__collection:hover,
+.page-header__collection:focus,
+.page-header__collection .page-header__collection-text:focus {
+  background-color: #faf4ff;
+  border-radius: 0 30px 30px 0;
+}
+.page-header__search-icon,
+.page-header__collection-icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+.page-header__search-icon {
+  padding-right: 12px;
+  padding-left: 30px;
+}
+.page-header__collection-icon {
+  padding-right: 30px;
+  padding-left: 16px;
+}
+.page-header__search-text,
+.page-header__collection-text {
+  font-family: @fontFamilyOSSB;
+  font-size: 18px;
+  line-height: 26px;
+  color: @colorSimpleText;
+  padding: 6px 0px;
+}
+.page-header__search-text {
+  padding-right: 45px;
+}
+.page-header__input-search-wrap {
+  display: none;
+}
+.page-header__input-search {
+  outline: none;
+}
+.page-header__input--show {
+  width: 200px;
+  background-color: #fff;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 12.5px;
+  border-radius: 30px 0 0 30px;
+  animation-name: stretch;
+  animation-duration: 1s;
+}
+@keyframes stretch{
+  from {
+    width: 130px;
+  }
+  to {
+    width: 200px;
+  }
+}
+.page-header__input--show .page-header__input-search {
+  width: 100%;
+  font-size: 18px;
+  padding: 10px;
+  border: none
+}
+.page-header__collection-text {
+  padding-left: 40px;
+  border-left: 1px solid #e0e0e0;
+}
+.page-header__nav {
+  display: none;
+  position: absolute;
+  top: 66px;
+  left: 0;
+}
+.page-header__nav-show {
+  display: block;
+}
+.page-header__hidden {
+  display: none;
+}
+.page-header__nav-show + .page-header__collection-icon {
+  margin-left: -17px;
+  margin-right: 17px;
+  transform: rotate(180deg);
+  transition: all 0.5s ease;
+}
+.page-header__nav-link {
+  background: #fff;
+  display: block;
+  font-family: @fontFamilyOSSB;
+  font-size: 18px;
+  color: @colorBrand;
+  padding: 10px 50px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.page-header__nav-link:hover,
+.page-header__nav-link:focus {
+  background-color: #faf4ff;
+  color: @colorBrand;
+}
+.page-header__nav-link:nth-last-child(1) {
+  border-bottom: none;
+  border-radius: 0 0 10px 10px;
+}
+.page-header__main-block {
+  width: 523px;
+  margin-left: auto;
+  margin-bottom: 198px;
+}
+.page-header__title {
+  font-family: @fontFamilyRB;
+  font-size: 115px;
+  margin: 0;
+}
+.page-header__title--color {
+  color: @colorSecond;
+}
+.page-header__subtitle {
+  font-family: @fontFamilyRM;
+  font-size: 50px;
+  color: #fbf934;
+  text-transform: uppercase;
+  margin: 20px 0 110px 15px;
+}
+.page-header__subtitle--color {
+  color: @colorSecond;
+}
+.page-header__btn {
+  background: #fff;
+  font-family: @fontFamilyMPR;
+  font-size: 20px;
+  letter-spacing: 1.4px;
+  color: @colorSimpleText;
+  padding: 18px 42px;
+  border-radius: 40px;
+  margin-left: 20px;
+  box-shadow: 0 5px 20px 0 #e0f2f7;
+}
+.page-header__btn:hover,
+.page-header__btn:focus {
+  background-color: #faf4ff;
+  box-shadow: 0 5px 20px 0 #d3e4e9;
+  color: @colorSimpleText;
+}
+.page-header__arrow-icon {
+  fill: #876ae6;
+  padding: 0 10px;
+}
+.page-header__decor-circle {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  right: 45.5%;
+  top: 185px;
+  border: 6px solid #e3d1fd;
+  border-radius: 15px;
+}
+.page-header__decor-square {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 6.5%;
+  top: 740px;
+  border: 6px solid #fff;
+  border-radius: 8px;
+  transform: rotate(55deg)
+}

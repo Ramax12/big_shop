@@ -1,0 +1,120 @@
+.general__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 1415px;
+  padding: 0;
+  margin: 0;
+}
+.general__list--height {
+  height: 900px;
+}
+.general__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 355px;
+  position: relative;
+  padding: 20px;
+  margin-bottom: 62px;
+  list-style: none;
+  box-sizing: border-box;
+}
+.general__item--hidden {
+  display: none;
+}
+.general__item--margin {
+  margin-bottom: 0;
+}
+.general__item:hover,
+.general__item:focus {
+  box-shadow: 0 5px 15px 5px #f6f5fe;
+}
+.general__top-bar {
+  width: 100%;
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.general__item:hover .general__top-bar,
+.general__item:focus .general__top-bar {
+  display: flex;
+}
+.general__likes-icon {
+  vertical-align: middle;
+  fill: #f96290;
+}
+.general__reviews-icon {
+  vertical-align: middle;
+  fill: #72dcec;
+}
+.general__likes-icon:hover,
+.general__likes-icon:focus {
+  fill: #fba0bc;
+}
+.general__reviews-icon:hover,
+.general__likes-icon:focus {
+  fill: #a1e0ea;
+}
+.general__likes-current,
+.general__reviews-current {
+  vertical-align: middle;
+  font-family: @fontFamilyOSR;
+  font-size: 14px;
+  color: #bbb;
+}
+.general__img-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 190px;
+  height: 250px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.general__item:hover .general__img-wrap,
+.general__item:focus .general__img-wrap {
+  margin-top: 8px;
+}
+.general__name {
+  font-family: @fontFamilyOSR;
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 15px;
+}
+.general__item:hover .general__name,
+.general__item:focus .general__name {
+  color: @colorBrand;
+}
+.general__price {
+  font-family: @fontFamilyOSSB;
+  font-size: 23px;
+  color: @colorBrand;
+  margin-top: 0;
+  margin-bottom: 45px;
+}
+.general__item:hover .general__price,
+.general__item:focus .general__price {
+  color: #8c84f9;
+}
+.general__btn {
+  background: linear-gradient(25deg, #8c84f9, #a165f4);
+  display: none;
+  position: absolute;
+  bottom: -30px;
+  padding: 15px 45px;
+  font-family: @fontFamilyOSSB;
+  font-size: 20px;
+  color: @colorSecond;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.general__btn:hover,
+.general__btn:focus {
+  background: linear-gradient(45deg, #a165f4, #8c84f9);
+}
+.general__item:hover .general__btn,
+.general__item:focus .general__btn {
+  display: block;
+}
